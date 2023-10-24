@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Free Fire Layout</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-image: url("C:/Users/Abhishek/Downloads/freefirebackground.png");
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 550px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .fullcontainer{
+                background-color: rgba(240, 248, 255, 0.297);
+                backdrop-filter: blur(70%);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 450px;
+                width: 90%;
+                border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+            }
+
+            .cards{
+                background-position: center center;
+                background-size: cover;
+                margin: 10px;
+                border-radius: 10px;
+                padding: 5px;
+                color: rgb(204, 224, 242);
+                height: 300px;
+                width: 300px;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                min-width: 300px;
+                transition: min-width 500ms;
+
+            }
+
+            .cards:active{
+                min-width: 400px;
+            }
+
+            #card1{
+                background-image: url("C:/Users/Abhishek/Downloads/movie1.jpg");
+            }
+
+            #card2{
+                background-image: url("C:/Users/Abhishek/Downloads/movie4.jpg");
+            }
+
+            #card3{
+                background-image: url("C:/Users/Abhishek/Downloads/movie5.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fullcontainer">
+            <div id="card1" class="cards">
+                <h2 class="title">Bermuda</h2>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, iure? Esse cum voluptas nulla laudantium, sunt voluptate officiis dolor, saepe in adipisci sed accusantium amet, velit delectus ea illo dolorum.</p>
+            </div>
+
+            <div id="card2" class="cards">
+                <h2 class="title">Purgatory</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus quasi molestiae deserunt dicta, impedit neque ab ut facere exercitationem rerum suscipit ducimus rem et maxime, quos dolor fuga. Dolore!</p>
+            </div>
+
+            <div id="card3" class="cards">
+                <h2 class="title">Kalahari</h2>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam eveniet quae porro a soluta mollitia laboriosam nostrum quisquam officiis reprehenderit incidunt in, quaerat fugiat sunt, fugit veritatis ipsam. Porro, est.</p>
+            </div>
+        </div>
+    </body>
+</html>

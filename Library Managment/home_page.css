@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("C:/Users/Abhishek/Downloads/home.jpg");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h1{
+    color: aliceblue;
+    text-shadow: 0 0 0.2em rgb(252, 157, 98), 0 0 0.2em rgb(149, 119, 255);
+    text-align: center;
+    font-size: 60px;
+}
+
+.container{
+    /* background-color: rgba(240, 248, 255, 0.751); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Slogin{
+ color: black;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ background-color: rgba(240, 248, 255, 0.705);
+ /* margin: 5px; */
+ margin-right: 10px;
+ border-radius: 10px;
+ height: 300px;
+}
+
+.Slogin *{
+    margin: 5px 20px;
+    padding: 5px;
+}
+
+.Alogin{
+    color: black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(240, 248, 255, 0.705);
+    margin-left: 10px;
+    height: 300px;
+}
+
+.Alogin *{
+    margin: 5px 20px;
+    padding: 5px;
+}
+
+.reset{
+    background-color: red;
+    border-color: red;
+}
+.reset:active{
+    background-color: red;
+    color: aliceblue;
+    border-color: red;
+}
+
+.submit{
+    background-color: green;
+    border-color: green;
+}
+
+.submit:active{
+    background-color: green;
+    color:aliceblue;
+    border-color: green;
+}

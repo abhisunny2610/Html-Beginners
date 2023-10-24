@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <style>
+        *{box-sizing: border-box;
+        }
+
+        .statusbar{
+            border: 2px solid gray;
+            padding: 5px;
+        }
+        .statusbar, .leftside, .rightside{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .user-info{
+            border-left: 4px solid lightslategray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            height: 35px;
+            margin-left: 5px;
+            }
+
+        .statusbar .leftside h3{
+            font-size: 25px;
+        }
+        
+        .statusbar img:hover{
+            background-color: rgb(154, 154, 242);
+            border-radius: 50%;
+        }
+        .leftside *{
+            margin: 8px;
+        }
+
+        .leftside a{
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .leftside a:hover{
+            background-color: rgb(69, 68, 68) ;
+            color: aliceblue;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            min-width: 850px;
+            margin-top: 20px;
+        }
+
+        .aside{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                height: 480px;
+                /* align-items: center; */
+        }
+
+        .aside a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            border: 1px solid rgb(208, 204, 204);
+            padding: 7px;
+            height: auto;
+        }
+ 
+        .aside a:hover{
+            background-color: red;
+            color: aliceblue;
+        }
+
+        main{
+            margin-left: 10px;
+            width: auto;
+            border-top: 2px solid grey;
+            min-width: 750px;
+        }
+
+        main .mainhead{
+            border: 1px;
+            border-color: rgb(208, 204, 204);
+            border-style: solid;
+        }
+
+        main .mainfoot{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main .mainfoot .leftfoot{
+            margin-right: 10px;
+        }
+
+        main .mainfoot a{
+            color: black;
+            padding: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .mainfoot a:hover{
+            background-color: rgb(69, 68, 68);
+            color: aliceblue;
+        } 
+    </style>
+</head>
+<body>
+
+    <div class="statusbar">
+        <div class="leftside">
+            <h3>AgroStar</h3>
+            <a href="#">Farmer</a>
+            <a href="#">Knowledge Management ></a>
+        </div>
+
+        <div class="rightside">
+            <img class="notify-button" src="D:\Icon\bell.ico" alt="bell-icon">
+            <div class="user-info">
+                <img class="user-avatar" src="D:\Icon\\user.ico" alt="user-avatar">
+                <p class="user-name">User Name</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="aside">
+                <a href="#">Farmer Profile</a>
+                <a href="#">Farm Details</a>
+                <a href="#">Product</a>
+                <a href="#">Saved to Buy Later</a>
+                <a href="#">Points & Referrals</a>
+                <a href="#">Wallet</a>
+                <a href="#">Setting</a>
+                <a href="#">Tag Call/Farmer Log Out</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="mainhead">
+               <span><h3>Agrostar Points & Real Cash</h3></span>
+            </div>
+
+            <div class="mainmiddle">
+                <h2>Previous Transaction:</h2>
+            </div>
+            <div class="mainfoot">
+                <div class="leftfoot">
+                    <a href="#">Id</a>
+                    <a href="#">Cash Type</a>
+                    <a href="#">Entry Type</a>
+                    <a href="#">Amount</a>
+                    <a href="#">Real</a>
+                    <a href="#">Points</a>
+                    <a href="#">Reason</a>
+                </div>
+
+                <div class="rightfoot">
+                    <a href="#">Updated By</a>
+                    <a href="#">Updated On</a>
+                    <a href="#">Remarks</a>
+                </div>
+            </div>
+            <hr>
+        </main>
+    </div>
+</body>
+</html>

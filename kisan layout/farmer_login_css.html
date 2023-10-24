@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LogIn Page</title>
+        <style>
+            body{
+                background-image: url("C:/Users/Abhishek/OneDrive/Pictures/Saved Pictures/kisan.png") ;
+                background-size: cover;
+                background-position: center center;
+                height: 500px;
+                
+            }
+            #head h1{
+                color: rgba(3, 74, 74, 0.863);
+                font-size: 95px;
+            }
+            #head p{
+                color: rgb(71, 5, 5);
+                font-size: 20px;
+                
+            }
+            #form{
+                background: linear-gradient(to bottom right, rgb(254, 254, 254, 0.5), rgb(249, 247, 247, 0.5));
+                backdrop-filter: blur(1px);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+                border: 2px solid grey;
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+            }
+            #form h3{
+                color: rgba(3, 74, 74, 0.863);
+                
+            }
+            #container{
+                display: flex;
+                /* flex-direction: row; */
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+                padding-top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="head">
+                <h1>Welcome To Dream Kisan</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex saepe, earum dicta, blanditiis ab,
+                    dolor accusamus quisquam ratione at beatae qui rem aperiam voluptate ea ipsum inventore. Inventore, modi id.</p>
+            </div>
+
+            <div>
+                <div id="form">
+                    <h3>Login to Dream Kisan</h3>
+                    <form>
+                        <div>
+                            <label for="name"></label>
+                            <input type="text" name="username" placeholder="User Name" id="name">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="pass"></label>
+                            <input type="password" name="pass" placeholder="User Password" id="pass">
+                        </div>
+                        </br>
+                        <div>
+                            <a href="#">forget your password?</a>
+                        </div>
+                        </br>
+                        <div>
+                            <input type="button" value="LogIn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+</html>

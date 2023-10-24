@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<!--
+-------------------------------------------------------------------------------
+In this section we will make a simple web page in which we will make bocks
+for each catagery of skill and we will track their progress.
+The basic idea to create 
+-------------------------------------------------------------------------------
+-->
+
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Protfolio Project</title>
+        <!-- <link rel="stylesheet" href="C:\HTML File\card layout\layout2css.css"> -->
+        <style>
+                        *{
+                box-sizing: border-box;
+            }
+
+            body{
+                padding: 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: rgb(236, 243, 246);
+            }
+
+            /* app-container */
+
+            .app-container{
+                display: flex;
+                justify-content: space-around;
+                /* align-items: center; */
+                height: 600px;
+            }
+
+            .app-sidebar{
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                justify-content: space-evenly;
+                /* background-color: #8377ff; */
+                
+            }
+
+            .app-sidebar img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: calc(32px+15px);
+                height: calc(32px+15px);
+                padding: 15px;
+                border: 1px solid inherit;
+                border-radius: 50%;
+                transition: background-color ease-in-out 300ms;
+            }
+
+            .app-sidebar img:hover{
+                background-color: lightslategray;
+            }
+
+            .app-sidebar .home{
+                background-color: lightslategray;
+            }
+
+
+
+            /* =============================================================== */
+            /* =============================================================== */
+            /* ---------------------Header head-container---------------------- */
+
+            .head-container,.head-left-container, .head-right-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .head-left-container *{
+                margin-right: 15px;
+            }
+
+            .logo{
+                font-size: 1.6rem;
+            }
+
+            .search{
+                --height: 40px;
+                font-size: 1.2rem;
+                height: var(--height);
+                border: 1px solid;
+                padding: 0px 5px;
+                border-radius: calc(var(--height)/2);
+                background-image: url(search.ico);
+                background-repeat: no-repeat;
+                background-position: right center;
+                border-color: white;
+                border-width: 5px;
+            }
+
+            /* head-right-container contains 
+            -> theme-button
+            -> add-project-button
+            -> notify-button
+            -> user-info
+                -> user-avatar
+                -> use-name
+            */
+
+            .head-right-container img{
+                width: 32px;
+                height: 32px;
+                margin-left: 10px;
+
+            }
+
+            /* user-info */
+
+            .user-info{
+                border-left: 4px solid lightslategray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                height: 35px;
+                margin-left: 5px;
+            }
+            .user-info *{
+                padding: 0px;
+            }
+
+            /* =============================================================== */
+            /* =============================================================== */
+            /* ------------------Portfolio Container Styles------------------- */
+
+            .portfolio-container{
+                background-color: whitesmoke;
+                border: 1px solid white;
+                border-radius: 10px;
+                flex: 2;
+            }
+
+
+            .heading{
+                display: flex;
+                justify-content: space-between;
+                margin: 10px;
+            }
+
+            .info-bar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .info{
+                display: flex;
+                align-items: center;
+            }
+
+            .info-group{
+                padding: 5px;
+            }
+
+            .info-group *{
+                margin: 0px;
+            }
+
+
+            /* Cards div  */
+
+            .cards{
+                display: flex;
+                flex-wrap: wrap;
+                overflow-y: auto;
+                height: 400px;
+                justify-content: space-evenly;
+            }
+
+            .cards .card .card-title{
+                font-size: 1.1rem;
+            }
+
+
+            .cards .card{
+                --clr-blue: rgb(13, 82, 202);
+                background-color: rgba(13, 82, 202, 0.225); 
+                width: 250px;
+                height: 225px;
+                border-radius: 10px;
+                margin: 10px;
+                color: inherit ;
+            }
+
+            .cards .card img{
+                background-color: rgba(79, 79, 167, 0.54);
+                /* color: red; */
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+            }
+
+            .cards .card .head{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0px 10px;
+                color: lightslategray;
+            }
+
+            .cards .card{
+                text-align: center;
+            }
+
+            .cards .card .card-content *{
+            margin: 2px;
+            }
+
+            .cards .card .card-content {
+                margin-bottom: 20px;
+            }
+            
+
+            .cards .card .progress-bar *{
+                margin: 0px;
+                margin-left: 10px;
+                
+            }
+
+            .cards .card .progress-bar{
+            text-align: left;
+            }
+
+            .cards .card .progress-bar .meter{
+                width: 50%;
+                height: 10px;
+                background-color: dodgerblue;
+                margin-bottom: 5px;
+            }
+
+            .cards .card footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 10px;
+            }
+
+            .cards .card footer .right{
+                background-color: whitesmoke;
+                width: fit-content;
+                /* height: 40px; */
+                padding: 1px 15px;
+                text-align: center;
+                padding: 10px 20px;
+                width: 120px;
+                border-radius: 20px;
+            }
+
+            /* Changing card colors */
+
+            .cards .card1{
+                background-color:#fee4cb;
+
+            }
+
+            .cards .card2{
+                background-color:#e9e7fd;
+
+            }
+
+            .cards .card3{
+                background-color:#dbf6fd;
+
+            }
+
+            .cards .card4{
+                background-color:#c8f7dc;
+
+            }
+
+            .cards .card5{
+                background-color:#fee4cb;
+
+            }
+
+            .cards .card6{
+                background-color:#d5deff;
+
+            }
+            .cards .card1 .card-title{
+                color:#ffbc7e;
+
+            }
+
+            .cards .card2 .card-title{
+                color:#8377ff;
+
+            }
+
+            .cards .card3 .card-title{
+                color:#7ae4ff;
+
+            }
+
+            .cards .card4 .card-title{
+                color:#7affb4;
+
+            }
+
+            .cards .card5 .card-title{
+                color:#ffba79;
+
+            }
+
+            .cards .card6 .card-title{
+                color:#7795ff;
+
+            }
+
+            /* =============================================================== */
+            /* =============================================================== */
+            /* --------------------- Message Section-------------------------- */
+
+            .message-section{
+                background-color: whitesmoke;
+                border-radius: 10px;
+                margin: 0px 10px;
+                padding:  0px 10px 10px 10px;
+                flex: 1;
+                overflow-y: auto;
+            }
+
+            .message-box>img{
+                --size: 40px;
+                width: var(--size);
+                height: var(--size);
+                border-radius: 50%;
+                object-fit: cover;
+                /* object-fit will remove the streaching problem of the image */
+            } 
+
+            .message-box{
+                display: flex;
+                align-items: top;
+                border: 1px solid rgb(212, 212, 212);
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 3px;
+            }
+
+            .message-header *{
+                padding: 0px;
+            }
+
+            .message-header{
+                display: flex;
+                height: 35px;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 5px;
+            }
+
+            .message-line {
+                text-align: right;
+            }
+
+            .message-content{
+                width: 100%;
+            }
+
+            .message-section-header{
+                position: sticky;
+                z-index: 1;
+                top: 0;
+                background-color: whitesmoke;
+                padding: 20px;
+                margin-top: 0px;
+
+            }
+        </style>
+
+    </head>
+    <body>
+
+    
+
+        <header class="head-container">
+            <div class="head-left-container">
+                <img src="D:\Icon\menu3.ico" alt="menu">
+                <p class="logo">Portfolio</p>
+                <input class="search" type="search" placeholder="Search..">
+            </div>
+
+            <div class="head-right-container">
+                <img class="theme-button" src="D:\Icon\moon.ico" alt="half-moon">
+                <img class="add-project-button" src="D:\Icon\plus.ico" alt="add-icon">
+                <img class="notify-button" src="D:\Icon\bell.ico" alt="bell-icon">
+                <div class="user-info">
+                    <img class="user-avatar" src="D:\Icon\\user.ico" alt="user-avatar">
+                    <p class="user-name">User Name</p>
+                </div>
+            </div>
+        </header>
+    <div class="app-container">
+
+        <!-- app sidebar -->
+
+        <div class="app-sidebar">
+
+            <img class="home" src="D:\Icon\home.ico" alt="home">
+            <img class="char" src="D:\Icon\ok.ico" alt="pie chart">
+            <img class="calander" src="D:\Icon\calendar.ico" alt="calander">
+            <img class="setting" src="D:\Icon\settings.ico" alt="setting">
+
+        </div>
+
+        <!-- app project cards -->
+
+        <div class="portfolio-container">
+
+            <!-- header to show the title and today date -->
+            <header class="heading">
+                <h1>Projects</h1>
+                <h2>Auguest, 25</h2>
+            </header>
+
+            <div class="info-bar">
+                <div class="info">
+
+                    <div class="info-group">
+                        <p><b>45</b></p>
+                        <p>In Progress</p>
+                    </div>
+
+                    <div class="info-group">
+                        <p><b>24</b></p>
+                        <p>Upcoming</p>
+                    </div>
+
+                    <div class="info-group">
+                        <p><b>62</b></p>
+                        <p>Total Projects</p>
+                    </div>
+                </div>
+
+                <div class="views">
+
+                    <button class="grid-view"><img src="D:\Icon\list.ico" alt="list"></button>
+                    <button class="list-view"><img src="D:\Icon\grid.ico" alt="grid"></button>
+
+                </div>
+
+            </div>
+
+            
+            <div class="cards">
+
+                <!-- -------------------------------------------- -->
+                <div class="card card1">
+
+                    <div class="head">
+                        <p>August 25, 2022</p>
+                        <img src="D:\Icon\icons8_menu_vertical.ico" alt="menu">
+                    </div>
+        
+                    <div class="card-content">
+                        <p class="card-title">Web Designing</p>
+                        <p>Prototyping</p>
+                    </div>
+        
+                    <div class="progress-bar">
+                        <p>Progress</p>
+                        <div class="meter">
+                        </div>
+                    </div>
+        
+                    <hr>
+        
+                    <footer>
+        
+                        <div class="left">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\icons8_plus_math.ico" alt="plus">
+                        </div>
+        
+                        <div class="right">
+                            <p style="margin: 0px;">3 days left</p>
+                        </div>
+                    </footer>
+
+                </div>
+
+                <!-- -------------------------------------------- -->
+                <!-- -------------------------------------------- -->
+
+                <!-- -------------------------------------------- -->
+                <div class="card card2">
+
+                    <div class="head">
+                        <p>August 25, 2022</p>
+                        <img src="D:\Icon\icons8_menu_vertical.ico" alt="menu">
+                    </div>
+        
+                    <div class="card-content">
+                        <p class="card-title">Testing</p>
+                        <p>Prototyping</p>
+                    </div>
+        
+                    <div class="progress-bar">
+                        <p>Progress</p>
+                        <div class="meter">
+                        </div>
+                    </div>
+        
+                    <hr>
+        
+                    <footer>
+        
+                        <div class="left">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\icons8_plus_math.ico" alt="plus">
+                        </div>
+        
+                        <div class="right">
+                            <p style="margin: 0px;">3 days left</p>
+                        </div>
+                    </footer>
+
+                </div>
+
+                <!-- -------------------------------------------- -->
+                <!-- -------------------------------------------- -->
+
+                <!-- -------------------------------------------- -->
+                <div class="card card3">
+
+                    <div class="head">
+                        <p>August 25, 2022</p>
+                        <img src="D:\Icon\icons8_menu_vertical.ico" alt="menu">
+                    </div>
+        
+                    <div class="card-content">
+                        <p class="card-title">Svg Animation</p>
+                        <p>Prototyping</p>
+                    </div>
+        
+                    <div class="progress-bar">
+                        <p>Progress</p>
+                        <div class="meter">
+                        </div>
+                    </div>
+        
+                    <hr>
+        
+                    <footer>
+        
+                        <div class="left">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\icons8_plus_math.ico" alt="plus">
+                        </div>
+        
+                        <div class="right">
+                            <p style="margin: 0px;">3 days left</p>
+                        </div>
+                    </footer>
+
+                </div>
+
+                <!-- -------------------------------------------- -->
+                <!-- -------------------------------------------- -->
+
+                <!-- -------------------------------------------- -->
+                <div class="card card4">
+
+                    <div class="head">
+                        <p>August 25, 2022</p>
+                        <img src="D:\Icon\icons8_menu_vertical.ico" alt="menu">
+                    </div>
+        
+                    <div class="card-content">
+                        <p class="card-title">UI Development</p>
+                        <p>Prototyping</p>
+                    </div>
+
+                    <div class="progress-bar">
+                        <p>Progress</p>
+                        <div class="meter">
+                        </div>
+                    </div>
+        
+                    <hr>
+        
+                    <footer>
+        
+                        <div class="left">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\icons8_plus_math.ico" alt="plus">
+                        </div>
+        
+                        <div class="right">
+                            <p style="margin: 0px;">3 days left</p>
+                        </div>
+                    </footer>
+
+                </div>
+
+                <!-- -------------------------------------------- -->
+                <!-- -------------------------------------------- -->
+
+                <!-- -------------------------------------------- -->
+                <div class="card card5">
+
+                    <div class="head">
+                        <p>August 25, 2022</p>
+                        <img src="D:\Icon\icons8_menu_vertical.ico" alt="menu">
+                    </div>
+        
+                    <div class="card-content">
+                        <p class="card-title">Data Analyst</p>
+                        <p>Prototyping</p>
+                    </div>
+        
+                    <div class="progress-bar">
+                        <p>Progress</p>
+                        <div class="meter">
+                        </div>
+                    </div>
+        
+                    <hr>
+        
+                    <footer>
+        
+                        <div class="left">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\icons8_plus_math.ico" alt="plus">
+                        </div>
+        
+                        <div class="right">
+                            <p style="margin: 0px;">3 days left</p>
+                        </div>
+                    </footer>
+
+                </div>
+
+                <!-- -------------------------------------------- -->
+                <!-- -------------------------------------------- -->
+
+                <!-- -------------------------------------------- -->
+                <div class="card card6">
+
+                    <div class="head">
+                        <p>August 25, 2022</p>
+                        <img src="D:\Icon\icons8_menu_vertical.ico" alt="menu">
+                    </div>
+        
+                    <div class="card-content">
+                        <p class="card-title">Web Designing</p>
+                        <p>Prototyping</p>
+                    </div>
+        
+                    <div class="progress-bar">
+                        <p>Progress</p>
+                        <div class="meter">
+                        </div>
+                    </div>
+        
+                    <hr>
+        
+                    <footer>
+        
+                        <div class="left">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\user.ico" alt="avatar">
+                            <img src="D:\Icon\icons8_plus_math.ico" alt="plus">
+                        </div>
+        
+                        <div class="right">
+                            <p style="margin: 0px;">3 days left</p>
+                        </div>
+                    </footer>
+
+                </div>
+
+                <!-- -------------------------------------------- -->
+                <!-- -------------------------------------------- -->
+
+            </div>
+
+        </div>
+
+
+        <!-- app message container -->
+        <div class="message-section">
+
+            <h2 class="message-section-header">Client Message</h2>
+            
+            <!-- message 1 -->
+            <div class="message-box">
+                <img src="D:\Icon\user.ico" alt="user1">
+                <div class="message-content">
+                    <div class="message-header">
+                        <h3 class="client-name">Stephanie</h3>
+                        <img src="D:\Icon\star.ico" alt="star">
+                    </div>
+                    <p>Hey, can tell me about progress of project? I'm waiting for your response.</p>
+                    <div class="message-line">
+                        <p class="time">Aug, 25</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- message 2 -->
+            <div class="message-box">
+                <img src="D:\Icon\user.ico" alt="user1">
+                <div class="message-content">
+                    <div class="message-header">
+                        <h3 class="client-name">mark</h3>
+                        <img src="D:\Icon\star.ico" alt="star">
+                    </div>
+                    <p>Awesome! 🤩 I like it. We can schedule a meeting for the next one.</p>
+                    <div class="message-line">
+                        <p class="time">Aug, 25</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- message 3 -->
+            <div class="message-box">
+                <img src="D:\Icon\user.ico" alt="user1">
+                <div class="message-content">
+                    <div class="message-header">
+                        <h3 class="client-name">David</h3>
+                        <img src="D:\Icon\star.ico" alt="star">
+                    </div>
+                    <p>Hey, can tell me about progress of project? I'm waiting for your response.</p>
+                    <div class="message-line">
+                        <p class="time">Aug, 25</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- message 4 -->
+            <div class="message-box">
+                <img src="D:\Icon\user.ico" alt="user1">
+                <div class="message-content">
+                    <div class="message-header">
+                        <h3 class="client-name">Jessica</h3>
+                        <img src="D:\Icon\star.ico" alt="star">
+                    </div>
+                    <p>I am really impressed! Can't wait to see the final result.</p>
+                    <div class="message-line">
+                        <p class="time">Aug, 25</p>
+                    </div>
+                </div>
+            </div>
+             
+
+        </div>
+    </div>
+    </body>
+
+</html>

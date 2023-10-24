@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 100px;
+    margin: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*=================================SIMILAR STYLING=======================================*/
+
+section{
+    padding: 80px 0px;
+}
+
+section .title{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #5a4bda;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: goldenrod;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px ;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.content{
+    background: #f1f0fe;
+    color: grey;
+    text-align: justify;
+}
+
+/*=================================NAVBAR SECTION=======================================*/
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+.navbar.sticky{
+    /* position: fixed; */
+    background: #fff;
+}
+
+/* .navbar .navbar-content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; 
+}    */
+
+
+.navbar .navbar-content .logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-content .logo img{
+    height: 50px;
+    width: 50px;
+}
+
+.navbar .navbar-content .logo .search input{
+    width: 700px;
+    height: 2.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    /* position: relative; */
+    padding-left: 10px;
+    /* border-radius: 6px; */
+}
+
+.navbar .navbar-content .logo .search i{
+    /* position: absolute; */
+    display: none;
+}
+
+.navbar .navbar-content .logo a{
+    height: 2.5rem;
+    text-decoration: none;
+    background: #5a4bda;
+    padding: 7px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.navbar .navbar-content .links{
+    margin-top: 50px;
+    display: flex;
+    /* row-gap: 1rem; */
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: center; */
+    width: 100%;
+}
+
+.navbar .navbar-content .links li,
+.navbar .navbar-content .links .dropdown{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .navbar-content .links .dropdown li{
+    display: block;
+}
+
+.navbar .navbar-content .links li a,
+.navbar .navbar-content .links button a {
+    display: block;
+    color: #111;
+    font-size: 18px;
+    font-weight: 550;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.navbar .navbar-content .links .dropdown a:hover{
+    background:  #5a4bda;
+    color: #fff;
+}
+
+.navbar .navbar-content .links button{
+    background: none;
+    color: #111;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.dropdown-menu{
+    border-top: 2px solid #5a4bda;
+    background: #5a4bda;
+}
+
+.slider{
+    padding-top: 0px;
+    width: 100%;
+}
+
+/*================================ ABOUT INSTITUTE SECTION ========================================*/
+
+.institute .institute-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.institute .institute-content .cards{
+    width: calc(33% - 20px);
+    height: 25vh;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.institute .institute-content .cards .box i{
+    font-size: 80px;
+    font-weight: 1000;
+    color: #5a4bda;
+
+}
+
+.institute .institute-content .cards .box .text{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.institute .institute-content .cards .box p{
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+
+/*================================ ABOUT INSTITUTE SECTION ========================================*/
+
+.distance-learning .distance-learning-content,
+.news .news-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 50px; */
+}
+
+.distance-learning .distance-learning-content .left{
+    width: 60%;
+    border-left: 5px solid goldenrod;
+    border-radius: 6px;
+    padding: 10px;
+    object-fit: cover;
+    background: linear-gradient(to right ,#5a4bda, white);
+
+}
+
+.distance-learning .distance-learning-content .right1{
+    width: 60%;
+    background: linear-gradient(to left ,#5a4bda, white);
+    border-right: 5px solid goldenrod;
+    border-radius: 6px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.distance-learning .distance-learning-content .right,
+.distance-learning .distance-learning-content .left1
+{
+    width: 40%;
+}
+
+.distance-learning .distance-learning-content .left .title2,
+.distance-learning .distance-learning-content .right1 .title2{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.distance-learning .distance-learning-content .left p,
+.distance-learning .distance-learning-content .right1 p{
+    text-align: justify;
+}
+
+.distance-learning .distance-learning-content .left a,
+.distance-learning .distance-learning-content .right1 a{
+    height: 2rem;
+    text-decoration: none;
+    background: #5a4bda;
+    padding: 6px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 6px;
+}
+
+/*================================ ADMISSION SECTION ========================================*/
+
+.admission{
+    width: 100%;
+    background: url("water.jpg") center;
+    height: 50vh;
+    background-repeat: no-repeat;
+    /* filter: blur(0.5); */
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admission .admission-content p{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px #5a4bda;
+    opacity: 1;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*================================ PROGRAM SECTION ========================================*/
+
+.program .program-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.program .program-content .card
+{
+    width: calc(33% - 20px);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+    rgba(0, 0, 0, 0.07) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, 
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+/*================================ MENTORS SECTION ========================================*/
+
+.mentors .carousel .card{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+    rgba(0, 0, 0, 0.07) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, 
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    margin: 10px;
+    width: calc(33% - 20px);
+}
+
+.mentors .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.mentors .carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentors .carousel .card img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #5a4bda;
+}
+
+/*================================ NEWS SECTION ========================================*/
+
+.news{
+    background: rgba(243, 241, 241, 0.753);
+}
+
+.news .news-content .left{
+    width: 40%;
+}
+
+.news .news-content .right{
+    width: 60%;
+}
+
+.news .news-content .left img{
+    height: 400x;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.news .news-content .right .update{
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px 8px;
+    border-radius: 10px;
+}
+
+.news .news-content .right .update:hover{
+    transition: all 0.5 ease;
+    box-shadow: #bbbbbc 0px 2px 8px 0px;
+    background: rgb(249, 248, 248);
+}
+
+.news .news-content .right .update a{
+    text-decoration: none;
+    color: #111;
+}
+
+/*================================ SEVICES SECTION ========================================*/
+
+.services{
+    background: rgba(243, 241, 241, 0.753);
+}
+
+.services .carousel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .carousel .card{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+    rgba(0, 0, 0, 0.07) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, 
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    margin: 10px;
+    width: calc(33% - 20px);
+    height: 400px;
+}
+
+.services .carousel .card:hover{
+    transition: all 1 ease;
+    transform: scale(1.05);
+    box-shadow: #5a4bda 0px 2px 8px 0px;
+    background: rgb(249, 248, 248);
+    color: #111;
+}
+
+.services .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.services .carousel .card p{
+    text-align: justify;
+    color: grey;
+}
+
+
+.services .carousel .card img{
+    height: 100px;
+    width: 100px;
+}
+
+/*================================ ADMISSION SECTION ========================================*/
+
+.placement{
+    width: 100%;
+    background: black;
+    object-fit: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+    /* filter: blur(0.5); */
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placement .placement-content p{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px #5a4bda;
+    opacity: 1;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*================================ FOOTER SECTION ========================================*/
+
+.footer .footer-content .upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .footer .footer-content .upper .address{
+    width: 60%;
+}
+
+.footer .footer-content .upper .quick-links{
+    width: 40%;
+} */
+
+.footer .footer-content .upper h3{
+    font-weight: bold;
+    color: grey;
+}
+
+.footer .footer-content .upper p span{
+    color: darkgrey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer .footer-content .quick-links a{
+    color: grey;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    transition: all 0.5 ease;
+    font-weight: 500;
+}
+
+.footer .footer-content .quick-links a:hover{
+    color: #5a4bda;
+}
+
+.footer .footer-content .email input{
+    outline: none;
+    border: 1px solid grey;
+    width: 50%;
+    height: 3rem;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: large;
+    background-color: lightgrey;
+}
+
+.footer .footer-content .email button{
+    border: none;
+    outline: none;
+    height: 3rem;
+    background-color: lightgray;
+    border: 1px solid grey;
+    border-radius: 6px;
+    font-size: large;
+}
+
+.footer .footer-content .email i{
+    padding: 10px;
+    color: gray;
+}
+
+/*================================  CONTACT FORM ========================================*/
+
+.appointment-form .appointment-content{
+    background: url(10.jpg) right;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+

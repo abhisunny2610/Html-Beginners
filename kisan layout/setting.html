@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Points & Referrals</title>
+        <style>
+            *{box-sizing: border-box;
+            }
+
+            .statusbar{
+                border: 2px solid gray;
+                padding: 5px;
+            }
+
+            .statusbar, .leftside, .rightside{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .user-info{
+                border-left: 4px solid lightslategray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                height: 35px;
+                margin-left: 5px;
+            }
+
+            .statusbar .leftside h3{
+                font-size: 25px;
+            }
+            
+            .statusbar img:hover{
+                background-color: rgb(154, 154, 242);
+                border-radius: 50%;
+            }
+            .leftside *{
+                margin: 8px;
+            }
+
+            .leftside a{
+                color: black;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            .leftside a:hover{
+                background-color: rgb(69, 68, 68) ;
+                color: aliceblue;
+            }
+
+            .aside{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                height: 480px;
+                /* align-items: center; */
+            }
+
+            .aside a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            border: 1px solid rgb(208, 204, 204);
+            padding: 7px;
+            height: auto;
+            }
+ 
+            .aside a:hover{
+            background-color: red;
+            color: aliceblue;
+            }
+
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: default;
+                /* padding: 10px; */
+                margin-top: 20px;
+                min-width: 850px;
+            }
+            .container .main{
+                background-color: rgb(145, 200, 234);
+                margin-left: 20px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+            .main .content{
+                /* display: flex; */
+                /* justify-content: center; */
+                /* align-items: center; */
+                background-color: aliceblue;
+                margin: 20px;
+                padding: 10px;
+            }
+
+            .content .contenthead{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .contentmiddle .details{
+                display: flex;
+                align-items: center;
+                /* justify-content: center; */
+                margin-top: 5px;
+                padding: 5px;
+            }
+
+            .content .contentfoot .number{
+                display: flex;
+                align-items: center;
+                /* justify-content: center; */
+            }
+
+            .main .save{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+
+            .capture{
+                background-image: url("D:/Icon/writer.ico");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
+                border-color: inherit;
+                width: 200px;
+                margin-right: 5px;
+            }
+
+            .taken{
+                background-image: url("D:/Icon/account.ico");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
+                border-color: inherit;
+                width: 200px;
+                
+            }
+
+            .date{
+                border-color: inherit;
+                width: 200px;
+                margin-right: 5px;
+            }
+
+            .number .telephone{
+                border-color: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="statusbar">
+            <div class="leftside">
+                <h3>AgroStar</h3>
+                <a href="#">Farmer</a>
+                <a href="#">Knowledge Management ></a>
+            </div>
+
+            <div class="rightside">
+                <img class="notify-button" src="D:\Icon\bell.ico" alt="bell-icon">
+                <div class="user-info">
+                    <img class="user-avatar" src="D:\Icon\\user.ico" alt="user-avatar">
+                    <p class="user-name">User Name</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <header>
+                <div class="aside">
+                    <a href="#">Farmer Profile</a>
+                    <a href="#">Farm Details</a>
+                    <a href="#">Product</a>
+                    <a href="#">Saved to Buy Later</a>
+                    <a href="#">Points & Referrals</a>
+                    <a href="#">Wallet</a>
+                    <a href="#">Setting</a>
+                    <a href="#">Tag Call/Farmer Log Out</a>
+                </div>
+            </header>
+
+            <main class="main">
+                <h3>Settings & Preferences</h3>
+
+                <div class="content">
+                    <div class="contenthead">
+                        <h4>WHATSAPP PREFERENCES</h4>
+                        <div class="image">
+                            <img src="D:\Icon\whatsapp.ico" alt="whatsapp">
+                        </div>
+                    </div>
+
+                    <div class="contentmiddle">
+                        <h4>Permissions</h4>
+                        <div class="mark">
+                            <input type="checkbox" class="checkbox">
+                            <label for="checkbox">Farmers wants to track hios order's and ticket status on Whatsapp</label>
+                        </div>
+
+                        <div class="details">
+                            <div class="capture">
+                                <input type="text" class="capture" placeholder="Intent captured by">
+                            </div>
+
+                            <div class="date">
+                                <input type="date" class="date">
+                            </div>
+
+                            <div class="taken">
+                                <input type="text" class="taken" placeholder="Intent taken on">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contentfoot">
+                        <h4>Preferred Contact Number</h4>
+                        <div class="number">
+                            <h5>+91</h5>
+                            <input type="telephone" class="telephone" placeholder="Select Contact">
+                        </div>
+                        <p>Note: If farmer's preferred contact number is missing here, please edit
+                            and add same on their profie.
+                        </p>
+                    </div>
+                </div>
+
+                <input type="button" class="save" value="SAVE">
+            </main>
+        </div>
+    </body>
+</html> 

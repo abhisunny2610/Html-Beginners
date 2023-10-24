@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.header{
+    background-image: url("C:/Users/Abhishek/Downloads/party.avif");
+    background-position: center center;
+    /* background-size: cover; */
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: rgba(123, 117, 117, 0.564);
+    /* opacity: blur(100%); */
+    
+}
+
+.lefthead h3{
+    color: aliceblue;
+    margin-top: 0px;
+    font-size: x-large;
+}
+
+.righthead a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+a:hover{
+    background-color: grey;
+    color: black;
+    text-decoration: underline ;
+}
+
+a:active{
+    background-color: blue;
+    
+}
+
+.middlehead{
+    padding: 0px 50px;
+    padding-bottom: 100px;
+    color: aliceblue;
+    line-height: 5px;
+}
+
+.middlehead input{
+    background-color: orangered;
+    border-color: rgb(218, 49, 218);
+    padding: 5px;
+    color: aliceblue;
+}
+span{
+    color: orangered;
+    text-decoration: underline;
+}
+
+.main{
+    /* background-color: rgb(62, 3, 58); */
+    background-color: rgb(101, 5, 95);
+    margin-bottom: 0px;
+   
+}
+
+.mainhead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+
+.heading{
+    text-align: center;
+    color: aliceblue;
+    cursor: default;
+}
+
+.cardcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 40px;
+}
+
+.card{
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 15px;
+    cursor: default;
+}
+
+.card:hover{
+    background-color: rgb(70, 6, 69);
+    color: aliceblue;
+}
+
+.mainmiddle{
+    padding: 0px 50px;
+}
+
+.maincenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px 50px; */
+}
+
+.maincenter .right{
+    margin-left: 10px;
+}
+
+.mainfoot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+.mainfoot .sponsers img{
+    margin: 5px 70px;
+    padding-bottom: 20px;
+}
+
+.foot{
+    /* background-color: rgb(101, 5, 95); */
+    background-color: rgb(62, 3, 58) ;
+    margin-top: 0px;
+    padding: 10px 50px;
+}
+.foot .footimage img{
+    display: inline;
+    
+}

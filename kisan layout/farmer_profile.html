@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far4mer Profile</title>
+    <style>
+        body{
+            background-color: rgba(3, 169, 114, 0.792);
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(39, 158, 158);
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;; */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            /* border: 1px solid grey; */
+            margin: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+        }
+        #container h2{
+            color: aliceblue;
+        }
+
+        #container h4{
+            color: aliceblue;
+        }
+
+        #container h5{
+            color: aliceblue;
+        }
+
+        .contact{
+            border: 2px solid whitesmoke;
+            padding: 10px;
+            padding-top: 0px;
+            border-radius: 7px;
+            margin-bottom: 20px;
+        }
+
+        .contact div{
+            margin: 10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form>
+        <div>
+            <h2>Farmer Profile</h2>
+        </div>
+
+        <div class="contact">
+        
+            <h4>Contact Information</h4>
+                <div>
+                    <label for="phone"></label>
+                    <input type="tel" name="phone" placeholder="Phone Number" id="phone">
+                
+                    <label for="language"></label>
+                    <select name="mylanguage" id="language" placeholder="Language">
+                    <option value="language">Language</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="gujarati">Gujarati</option>
+                    <option value="bangali">Bangali</option>
+                    <option value="tamil">Tamil</option>
+                    </select>
+                
+                    <label for="android">SmartPhone Available</label>
+                    <input type="checkbox" name="android" id="android">
+                </div>
+
+                <div>
+                    <label for="fname"></label>
+                    <input type="text" placeholder="First Name" name="Fname" id="fname">
+                    <label for="mname"></label>
+                    <input type="text" placeholder="Middle Name" name="Mname" id="mname"><label for="fname"></label>
+                    <label for="lname"></label>
+                    <input type="text" placeholder="Last Name" name="Lname" id="lname">
+                </div>
+                <div>
+                    <label for="farmer"></label>
+                    <select name="farmertype" id="farmer">
+                    <option value="farmertype">Farmer Type</option>
+                    <option value="marginalF">Marginal</option>
+                    <option value="smallF">Small</option>
+                    <option value="semimediumF">Semi-Medium</option>
+                    <option value="mediumF">Medium</option>
+                    <option value="largeF">Large</option>
+                    </select>
+
+                    <label for="project"></label>
+                    <select name="projecttype" id="project">
+                    <option value="projecttype">Project Type</option>
+                    <option value="smallP">Small</option>
+                    <option value="mediumP">Medium</option>
+                    <option value="largeP">Large</option>
+                    </select>
+
+                    <label for="age"></label>
+                    <input type="text" name="myage" id="age" placeholder="Age">
+
+                    <label for="desc"></label>
+                    <input type="text" name="description" id="desc" placeholder="Description">
+
+                </div>
+        </div>
+
+        <div class="contact">
+            <h4>Farming Information</h4>
+                <div>
+                    <label for="irrigationS"></label>
+                    <select name="irrigation source" id="irrigationS">
+                    <option value="source">Irrigation Source</option>   
+                    <option value="Gwater">Groundwater from wells</option>
+                    <option value="Swater">Surface water</option>
+                    <option value="Dwater">Drainage ponds</option>
+                    <option value="Rwater">Rain</option>
+                    <option value="Mwater">Municipal Water</option>
+                    </select>
+
+                    <label for="irrigationT"></label>
+                    <select name="irrigation type" id="irrigationT">
+                    <option value="type">Irrigation Type</option>
+                    <option value="smallP">Sub Irrigation</option>
+                    <option value="mediumP">Well</option>
+                    <option value="largeP">Ditch</option>
+                    <option value="largeP">Tank</I></option>
+                    <option value="largeP">Sprinkler</option>
+                    <option value="largeP">Center-pivot</option>
+                    </select>
+
+                    <label for="crop"></label>
+                    <select name="crops type" id="crop">
+                    <option value="Ctype">Select Crop</option>
+                    <option value="wheatC">Wheat</option>
+                    <option value="maizeC">Maize</option>
+                    <option value="riceC">Rice</option>
+                    <option value="cottonC">Cotton</option>
+                    <option value="barleyC">Barley</option>
+                    <option value="coffeeC">Coffee</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <label for="aboutkisan"></label>
+                    <select name="Heard about kisan" id="aboutkisan">
+                    <option value="abiut">Heard About Dream Kisan</option>
+                    <option value="publicK">Public</option>
+                    <option value="socialmK">Social Media</option>
+                    <option value="contactK">Contact</option>
+                    </select>
+
+                    <label for="unit">Landholding</label>
+                    <input type="text" name="units" placeholder="Units" id="unit">
+                </div>
+
+                <div>
+                    <h5>Other Information</h5>
+
+                    <label for="tractor">Tractor</label>
+                    <input type="checkbox" name="tractor" id="tractor">
+
+                    <label for="insurance">Crop Insurance</label>
+                    <input type="checkbox" name="crop insurance" id="insurance">
+                </div>
+        </div>
+
+        <div class="contact">
+            <h4>Address Information</h4>
+
+            <div>
+                <label for="address"></label>
+                <input type="text" name="address" placeholder="Address Line" id="address">
+
+                <label for="village"></label>
+                <input type="text" name="village" placeholder="Village Name" id="village">
+
+                <label for="tehsil"></label>
+                <input type="text" name="tehsil" placeholder="Tehsil Name" id="tehsil">
+            </div>
+
+            <div>
+                <label for="landmark"></label>
+                <input type="text" name="landmark" placeholder="Street/Landmark" id="landmark">
+
+                <label for="city"></label>
+                <input type="text" name="city" placeholder="City/Town" id="city">
+
+                <label for="district"></label>
+                <input type="text" name="district" placeholder="District" id="district">
+
+                <label for="state"></label>
+                <input type="text" name="state" placeholder="State" id="state">
+            </div>
+            
+            <div>
+                <label for="post"></label>
+                <input type="text" name="postoffice" placeholder="Post Office" id="post">
+
+                <label for="pin"></label>
+                <input type="text" name="pincode" placeholder="Pincode" id="pin">
+                    
+            </div>
+        </div>
+        <div>
+            <input type="Submit" value="Submit Now">
+			<input type="Reset" value="Reset Now">
+            <br>
+            <br>
+        </div>        
+
+        </form>    
+    </div>
+    
+</body>
+</html>

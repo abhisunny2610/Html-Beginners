@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .card-container{
+            background-color: rgba(215, 147, 238, 0.861);
+            width: 350px;
+            height: 280px;
+            border-radius: 20px;
+        }
+
+        .head img{
+            /* background-color: rgb(194, 189, 189); */
+            border-radius: 5px;
+            width: 32px;
+            height: 32px;
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 10px;
+            color: rgb(86, 88, 92);
+        }
+        .card-content{
+            text-align: center;
+        }
+        .progress-bar *{
+            margin: 1px;
+            margin-left: 10px;
+        }
+
+        .progress-bar{
+            text-align: left;
+        }
+        .progress-bar .meter{
+            width: 50%;
+            height: 10px;
+            background-color: dodgerblue;
+            margin-bottom: 0px;
+        }
+        .progress h4{
+            text-align: right;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding-right: 10px;
+
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        footer .right{
+            background-color: rgb(170, 100, 168);
+            width: fit-content;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="head">
+            <h3>August,25 2022</h3>
+            <img src="D:\Icon\icons8_menu_vertical.ico" alt="menu">
+        </div>
+
+        <div class="card-content">
+            <h3>Web Designing</h3>
+            <p>Prototyping</p>
+        </div>
+
+        <div class="progress-bar">
+            <h4>Progress</h4>
+            <div class="meter">
+            </div>
+        </div>
+
+        <div class="progress">
+            <h4>50%</h4>
+        </div>
+        <hr>
+        <footer>
+            <div class="left">
+                <img src="D:\Icon\user.ico" alt="profile">
+                <img src="D:\Icon\user.ico" alt="profile">
+                <img src="D:\Icon\icons8_plus_math.ico" alt="plus">
+
+            </div>
+
+            <div class="right">
+                <h4 style="margin: 0px;">3 Days Left</h4>
+
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

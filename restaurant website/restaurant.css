@@ -1,0 +1,504 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.header{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    /* padding-bottom: 10px; */
+    margin-bottom: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: grey;
+    margin-bottom: 0px;
+    /* border: 2px solid green; */
+}
+
+.leftnav, .rightnav{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.login, .register, .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login, .register, .items{
+    border-right: 4px solid rgb(255, 255, 255);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 30px
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* border: 2px solid green; */
+}
+
+.infoleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    
+}
+
+.contact{
+    padding-left: 10px;
+}
+.infomiddle .logo{
+    height: 150px;
+}
+
+.inforight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    
+}
+
+.hour{
+    padding-left: 10px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+    margin-top: 0px;
+}
+
+.nav a{
+    margin: 0px 10px;
+    height: 30px;
+    width: 2cm;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: green;
+    color: whitesmoke;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("C:/Users/Abhishek/Downloads/hero.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    line-height: 25px;
+    margin-bottom: 0px;
+    font-size: x-large;
+}
+
+.aboutleft, .aboutright{
+    margin: 100px 40px;
+}
+
+.abouthead{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .readmore{
+    background-color: green;
+    border-color: green;
+    height: 30px;
+    width: 3cm;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.about .shopnow{
+    background-color: black;
+    border-color: black;
+    height: 30px;
+    width: 3cm;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.products, .services{
+    background-color: whitesmoke;
+    margin-top: 0px;
+    padding: 20px 0px;
+
+}
+
+.products, .blog{
+    padding-top: 30px;
+}
+
+.productheading, .blogheading , .dealheading, .newsheading{
+    font-size: xx-large;
+    margin-bottom: 0px;
+}
+
+.headingline{
+    margin-top: 0px;
+}
+
+.producthead, .bloghead, .dealhead, .newshead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    padding: 20px 0px;
+}
+
+.card1, .card2, .card3{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    margin: 10px;  
+    /* line-height: 10px; */
+}
+
+.cardmiddle h3, h4{
+    text-align: center;
+    line-height: 5px;
+}
+
+.cardmiddle h4{
+    color: red;
+}
+
+.cardfoot{
+    background-color: green;
+    display: flex;
+    border: 1px solid green;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.addcart{
+    background-color: whitesmoke;
+    border-color: inherit;
+}
+
+.view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.products .viewmore{
+    height: 40px;
+    width: 3cm;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.view input:hover{
+    background-color: white;
+    color: black;
+}
+
+.blog{
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+.blogmiddle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.content .readmore{
+    height: 40px;
+    width: 3cm;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.content input:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.servicecard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    padding: 20px 0px;
+}
+
+.card01, .card02, .card03{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 350px;
+    background-color: white;
+    margin: 10px;  
+    padding: 20px;
+    min-height: 320px;
+    /* line-height: 10px; */
+}
+
+.scardmiddle{
+    text-align: center;
+}
+
+.card02 .scardmiddle{
+    color: green;
+}
+
+.card02 .scardfoot .readmore{
+    background-color: green;
+    border-color: green;
+}
+
+.scardfoot .readmore{
+    height: 30px;
+    width: 3cm;
+    background-color: black;
+    color: white;
+    border-radius: 5px
+}
+
+.scardfoot input:hover{
+    background-color: white;
+    color: black;
+}
+.dealheading{
+    color: white;
+}
+
+.deals{
+    padding-top: 0px;
+    background-image: url("C:/Users\/Abhishek/Downloads/food-table.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.dealcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px 0px;
+}
+
+.dealscontent{
+    background-color: rgba(11, 2, 27, 0.413);
+    backdrop-filter: blur(20%);
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardday, .cardhour, .cardmin, .cardsec{
+    background-color: green;
+    margin: 0px 30px;
+    width: 90px;
+    height: 3cm;
+    text-align: center;
+    color: white;
+    border-radius: 10%;
+}
+
+.news{
+    padding-top: 30px;
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+}
+
+.newscard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.newsmiddle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsmiddle, .newsfoot{
+    padding: 20px;
+    color: rgb(92, 91, 91);
+}
+
+.newshead{
+    display: flex;
+}
+
+.newsmiddle span{
+    color: black;
+}
+
+.newsfoot span{
+    color: black;
+}
+
+
+.news1, .news2{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    margin-left: 10px;
+    /* padding: 10px; */
+    height: auto;
+    width: auto;
+}
+
+.news2 img{
+    background-color: rgb(168, 168, 168);
+}
+
+.newfoot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.newfoot .viewall{
+    height: 40px;
+    width: 3cm;
+    background-color: black;
+    color: white;
+    border-radius: 5px
+
+}
+
+.newfoot input:hover{
+    background-color: white;
+    color: black;
+}
+
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    padding: 20px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subscribe .subhead{
+    margin-right: 30px;
+}
+
+.subhead, .submiddle{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.submiddle .email{
+    height: 1cm;
+    width: 10cm;
+    border-radius: 5px;
+    border-color: green;
+    
+}
+
+.Buttons{
+    display: flex
+}
+
+.submiddle .subbutton{
+    height: 1cm;
+    width: 2cm;
+    border-radius: 5px;
+    border-color: green;
+    background-color: black;
+    color: white;
+}
+
+.Buttons .subbutton:hover{
+    background-color: white;
+    color: black;
+}
+
+.contact{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.contactinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contactleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 90px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+}
+
+span{
+    color: rgb(92, 91, 91)
+}
